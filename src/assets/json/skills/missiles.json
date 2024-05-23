@@ -1,0 +1,184 @@
+[
+  {
+    "title": "Missile Launcher Operation",
+    "desc": "Basic operation of missile launcher systems. 2% Bonus to missile launcher rate of fire per skill level.",
+    "attributes": ["perception", "willpower"],
+    "multiplier": 1,
+    "value": 0.02
+  },
+  {
+    "title": "Guided Missile Precision",
+    "desc": "Skill at precision missile homing. Proficiency at this skill increases the accuracy of a fired missile's exact point of impact, resulting in greater damage to small targets. 5% decreased factor of signature radius for all missile explosions per level of skill.",
+    "attributes": ["perception", "willpower"],
+    "multiplier": 5,
+    "value": 0.05
+  },
+  {
+    "title": "Missile Bombardment",
+    "desc": "Proficiency at long-range missile combat. 10% bonus to all missiles' maximum flight time per level.",
+    "attributes": ["perception", "willpower"],
+    "multiplier": 2,
+    "value": 0.1
+  },
+  {
+    "title": "Missile Projection",
+    "desc": "Skill at boosting missile bay trigger circuits and enhancing guided missiles' ignition systems. 10% bonus to all missiles' maximum velocity per level.",
+    "attributes": ["perception", "willpower"],
+    "multiplier": 4,
+    "value": 0.1
+  },
+  {
+    "title": "Rapid Launch",
+    "desc": "Proficiency at rapid missile launcher firing. 3% bonus to missile launcher rate of fire per level.",
+    "attributes": ["perception", "willpower"],
+    "multiplier": 2,
+    "value": 0.03
+  },
+  {
+    "title": "Target Navigation Prediction",
+    "desc": "Proficiency at optimizing a missile's flight path to negate the effects of a target's speed upon the explosion's impact. 10% decrease per level in factor of target's velocity for all missiles.",
+    "attributes": ["perception", "willpower"],
+    "multiplier": 2,
+    "value": 0.1
+  },
+  {
+    "title": "Warhead Upgrades",
+    "desc": "Proficiency at upgrading missile warheads with deadlier payloads. 2% bonus to all missile damage per skill level.",
+    "attributes": ["perception", "willpower"],
+    "multiplier": 5,
+    "value": 0.02
+  },
+  {
+    "title": "Rockets",
+    "desc": "Skill with small short range missiles. Special: 5% bonus to rocket damage per skill level.",
+    "attributes": ["perception", "willpower"],
+    "multiplier": 1,
+    "value": 0.05
+  },
+  {
+    "title": "Rocket Specialization",
+    "desc": "Specialist training in the operation of advanced rocket launchers. 2% bonus per level to the rate of fire of modules requiring Rocket Specialization.",
+    "attributes": ["perception", "willpower"],
+    "multiplier": 3,
+    "value": 0.02
+  },
+  {
+    "title": "Light Missiles",
+    "desc": "Skill with manually targeted missiles. Special: 5% Bonus to light missile damage per skill level.",
+    "attributes": ["perception", "willpower"],
+    "multiplier": 2,
+    "value": 0.05
+  },
+  {
+    "title": "Light Missile Specialization",
+    "desc": "Specialist training in the operation of advanced light missile launchers and arrays. 2% bonus per level to the rate of fire of modules requiring Light Missile Specialization.",
+    "attributes": ["perception", "willpower"],
+    "multiplier": 3,
+    "value": 0.02
+  },
+  {
+    "title": "Heavy Missiles",
+    "desc": "Skill with heavy missiles. Special: 5% bonus to heavy missile damage per skill level.",
+    "attributes": ["perception", "willpower"],
+    "multiplier": 3,
+    "value": 0.05
+  },
+  {
+    "title": "Heavy Missile Specialization",
+    "desc": "Specialist training in the operation of advanced heavy missile launchers. 2% bonus per level to the rate of fire of modules requiring Heavy Missile Specialization.",
+    "attributes": ["perception", "willpower"],
+    "multiplier": 5,
+    "value": 0.02
+  },
+  {
+    "title": "Heavy Assault Missiles",
+    "desc": "Skill with heavy assault missiles. Special: 5% bonus to heavy assault missile damage per skill level.",
+    "attributes": ["perception", "willpower"],
+    "multiplier": 3,
+    "value": 0.05
+  },
+  {
+    "title": "Heavy Assault Missile Specialization",
+    "desc": "Specialist training in the operation of advanced heavy assault missile launchers. 2% bonus per level to the rate of fire of modules requiring Heavy Assault Missile Specialization.",
+    "attributes": ["perception", "willpower"],
+    "multiplier": 5,
+    "value": 0.02
+  },
+  {
+    "title": "Cruise Missiles",
+    "desc": "Skill at the handling and firing of very large guided missiles. 5% bonus to cruise missile damage per skill level.",
+    "attributes": ["perception", "willpower"],
+    "multiplier": 5,
+    "value": 0.05
+  },
+  {
+    "title": "Cruise Missile Specialization",
+    "desc": "Specialist training in the operation of advanced cruise missile launchers. 2% bonus per level to the rate of fire of modules requiring Cruise Missile Specialization.",
+    "attributes": ["perception", "willpower"],
+    "multiplier": 8,
+    "value": 0.02
+  },
+  {
+    "title": "Torpedoes",
+    "desc": "Skill at the handling and firing of torpedoes. 5% bonus to torpedo damage per skill level.",
+    "attributes": ["perception", "willpower"],
+    "multiplier": 4,
+    "value": 0.05
+  },
+  {
+    "title": "Torpedoes Specialization",
+    "desc": "Specialist training in the operation of advanced torpedo launchers. 2% bonus per level to the rate of fire of modules requiring Torpedo Specialization.",
+    "attributes": ["perception", "willpower"],
+    "multiplier": 8,
+    "value": 0.02
+  },
+  {
+    "title": "XL Cruise Missiles",
+    "desc": "Skill at the handling and firing of very large guided missiles. 5% bonus to cruise missile damage per skill level.",
+    "attributes": ["perception", "willpower"],
+    "multiplier": 7,
+    "value": 0.05
+  },
+  {
+    "title": "XL Cruise Missile Specialization",
+    "desc": "Specialist training in the operation of advanced XL cruise missile launchers. 2% bonus per level to the rate of fire of modules requiring XL Cruise Missile Specialization.",
+    "attributes": ["perception", "willpower"],
+    "multiplier": 10,
+    "value": 0.02
+  },
+  {
+    "title": "XL Torpedoes",
+    "desc": "Skill at the handling and firing of XL Torpedoes. 5% bonus to XL Torpedo damage per skill level.",
+    "attributes": ["perception", "willpower"],
+    "multiplier": 7,
+    "value": 0.05
+  },
+  {
+    "title": "XL Torpedoes Specialization",
+    "desc": "Specialist training in the operation of advanced XL torpedo launchers. 2% bonus per level to the rate of fire of modules requiring XL Torpedo Specialization.",
+    "attributes": ["perception", "willpower"],
+    "multiplier": 10,
+    "value": 0.02
+  },
+  {
+    "title": "Auto-Targeting Missiles",
+    "desc": "Skill with auto-targeting missiles. Special: 5% bonus to Auto-Targeting Missile (light, heavy and cruise) damage per skill level.",
+    "attributes": ["perception", "willpower"],
+    "multiplier": 3,
+    "value": 0.05
+  },
+  {
+    "title": "Bomb Deployment",
+    "desc": "Basic operation of bomb delivery systems. 5% reduction of Bomb Launcher reactivation delay per skill level.",
+    "attributes": ["perception", "willpower"],
+    "multiplier": 4,
+    "value": 0.05
+  },
+  {
+    "title": "Defender Missiles",
+    "desc": "Skill with anti-missile missiles. Special: 10% bonus to defender missile max velocity per skill level.",
+    "attributes": ["perception", "willpower"],
+    "multiplier": 2,
+    "value": 0.1
+  }
+]

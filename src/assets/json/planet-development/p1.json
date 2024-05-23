@@ -1,0 +1,122 @@
+[
+  {
+    "group": "Processed Materials",
+    "name": "Bacteria",
+    "recipe": {
+      "inputs": [{ "resource": "Microorganisms", "quantity": 3000 }],
+      "outputQuantity": 20
+    }
+  },
+  {
+    "group": "Processed Materials",
+    "name": "Biofuels",
+    "recipe": {
+      "inputs": [{ "resource": "Carbon Compounds", "quantity": 3000 }],
+      "outputQuantity": 20
+    }
+  },
+  {
+    "group": "Processed Materials",
+    "name": "Biomass",
+    "recipe": {
+      "inputs": [{ "resource": "Planktic Colonies", "quantity": 3000 }],
+      "outputQuantity": 20
+    }
+  },
+  {
+    "group": "Processed Materials",
+    "name": "Chiral Structures",
+    "recipe": {
+      "inputs": [{ "resource": "Non-CS Crystals", "quantity": 3000 }],
+      "outputQuantity": 20
+    }
+  },
+  {
+    "group": "Processed Materials",
+    "name": "Electrolytes",
+    "recipe": {
+      "inputs": [{ "resource": "Ionic Solutions", "quantity": 3000 }],
+      "outputQuantity": 20
+    }
+  },
+  {
+    "group": "Processed Materials",
+    "name": "Industrial Fibers",
+    "recipe": {
+      "inputs": [{ "resource": "Autotrophs", "quantity": 3000 }],
+      "outputQuantity": 20
+    }
+  },
+  {
+    "group": "Processed Materials",
+    "name": "Oxidizing Compound",
+    "recipe": {
+      "inputs": [{ "resource": "Reactive Gas", "quantity": 3000 }],
+      "outputQuantity": 20
+    }
+  },
+  {
+    "group": "Processed Materials",
+    "name": "Oxygen",
+    "recipe": {
+      "inputs": [{ "resource": "Noble Gas", "quantity": 3000 }],
+      "outputQuantity": 20
+    }
+  },
+  {
+    "group": "Processed Materials",
+    "name": "Plasmoids",
+    "recipe": {
+      "inputs": [{ "resource": "Suspended Plasma", "quantity": 3000 }],
+      "outputQuantity": 20
+    }
+  },
+  {
+    "group": "Processed Materials",
+    "name": "Precious Metals",
+    "recipe": {
+      "inputs": [{ "resource": "Noble Metals", "quantity": 3000 }],
+      "outputQuantity": 20
+    }
+  },
+  {
+    "group": "Processed Materials",
+    "name": "Proteins",
+    "recipe": {
+      "inputs": [{ "resource": "Complex Organisms", "quantity": 3000 }],
+      "outputQuantity": 20
+    }
+  },
+  {
+    "group": "Processed Materials",
+    "name": "Reactive Metals",
+    "recipe": {
+      "inputs": [{ "resource": "Base Metals", "quantity": 3000 }],
+      "outputQuantity": 20
+    }
+  },
+  {
+    "group": "Processed Materials",
+    "name": "Silicon",
+    "recipe": {
+      "inputs": [{ "resource": "Felsic Magma", "quantity": 3000 }],
+      "outputQuantity": 20
+    }
+  },
+  {
+    "group": "Processed Materials",
+    "name": "Toxic Metals",
+    "recipe": {
+      "inputs": [{ "resource": "Heavy Metals", "quantity": 3000 }],
+      "outputQuantity": 20
+    }
+  },
+  {
+    "group": "Processed Materials",
+    "name": "Water",
+    "recipe": {
+      "inputs": [{ "resource": "Aqueous Liquids", "quantity": 3000 }],
+      "outputQuantity": 20
+    }
+  }
+]

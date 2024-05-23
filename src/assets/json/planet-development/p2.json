@@ -1,0 +1,266 @@
+[
+  {
+    "group": "Refined Commodities",
+    "name": "Biocells",
+    "recipe": {
+      "inputs": [
+        { "resource": "Precious Metals", "quantity": 40 },
+        { "resource": "Biofuels", "quantity": 40 }
+      ],
+      "outputQuantity": 5
+    }
+  },
+  {
+    "group": "Refined Commodities",
+    "name": "Construction Blocks",
+    "recipe": {
+      "inputs": [
+        { "resource": "Toxic Metals", "quantity": 40 },
+        { "resource": "Reactive Metals", "quantity": 40 }
+      ],
+      "outputQuantity": 5
+    }
+  },
+  {
+    "group": "Refined Commodities",
+    "name": "Consumer Electronics",
+    "recipe": {
+      "inputs": [
+        { "resource": "Chiral Structures", "quantity": 40 },
+        { "resource": "Toxic Metals", "quantity": 40 }
+      ],
+      "outputQuantity": 5
+    }
+  },
+  {
+    "group": "Refined Commodities",
+    "name": "Coolant",
+    "recipe": {
+      "inputs": [
+        { "resource": "Water", "quantity": 40 },
+        { "resource": "Electrolytes", "quantity": 40 }
+      ],
+      "outputQuantity": 5
+    }
+  },
+  {
+    "group": "Refined Commodities",
+    "name": "Enriched Uranium",
+    "recipe": {
+      "inputs": [
+        { "resource": "Toxic Metals", "quantity": 40 },
+        { "resource": "Precious Metals", "quantity": 40 }
+      ],
+      "outputQuantity": 5
+    }
+  },
+  {
+    "group": "Refined Commodities",
+    "name": "Fertilizer",
+    "recipe": {
+      "inputs": [
+        { "resource": "Proteins", "quantity": 40 },
+        { "resource": "Bacteria", "quantity": 40 }
+      ],
+      "outputQuantity": 5
+    }
+  },
+  {
+    "group": "Refined Commodities",
+    "name": "Genetically Enhanced Livestock",
+    "recipe": {
+      "inputs": [
+        { "resource": "Biomass", "quantity": 40 },
+        { "resource": "Proteins", "quantity": 40 }
+      ],
+      "outputQuantity": 5
+    }
+  },
+  {
+    "group": "Refined Commodities",
+    "name": "Livestock",
+    "recipe": {
+      "inputs": [
+        { "resource": "Biofuels", "quantity": 40 },
+        { "resource": "Proteins", "quantity": 40 }
+      ],
+      "outputQuantity": 5
+    }
+  },
+  {
+    "group": "Refined Commodities",
+    "name": "Mechanical Parts",
+    "recipe": {
+      "inputs": [
+        { "resource": "Precious Metals", "quantity": 40 },
+        { "resource": "Reactive Metals", "quantity": 40 }
+      ],
+      "outputQuantity": 5
+    }
+  },
+  {
+    "group": "Refined Commodities",
+    "name": "Microfiber Shielding",
+    "recipe": {
+      "inputs": [
+        { "resource": "Silicon", "quantity": 40 },
+        { "resource": "Industrial Fibers", "quantity": 40 }
+      ],
+      "outputQuantity": 5
+    }
+  },
+  {
+    "group": "Refined Commodities",
+    "name": "Miniature Electronics",
+    "recipe": {
+      "inputs": [
+        { "resource": "Silicon", "quantity": 40 },
+        { "resource": "Chiral Structures", "quantity": 40 }
+      ],
+      "outputQuantity": 5
+    }
+  },
+  {
+    "group": "Refined Commodities",
+    "name": "Nanites",
+    "recipe": {
+      "inputs": [
+        { "resource": "Reactive Metals", "quantity": 40 },
+        { "resource": "Bacteria", "quantity": 40 }
+      ],
+      "outputQuantity": 5
+    }
+  },
+  {
+    "group": "Refined Commodities",
+    "name": "Oxides",
+    "recipe": {
+      "inputs": [
+        { "resource": "Oxygen", "quantity": 40 },
+        { "resource": "Oxidizing Compound", "quantity": 40 }
+      ],
+      "outputQuantity": 5
+    }
+  },
+  {
+    "group": "Refined Commodities",
+    "name": "Polyaramids",
+    "recipe": {
+      "inputs": [
+        { "resource": "Industrial Fibers", "quantity": 40 },
+        { "resource": "Oxidizing Compound", "quantity": 40 }
+      ],
+      "outputQuantity": 5
+    }
+  },
+  {
+    "group": "Refined Commodities",
+    "name": "Polytextiles",
+    "recipe": {
+      "inputs": [
+        { "resource": "Industrial Fibers", "quantity": 40 },
+        { "resource": "Biofuels", "quantity": 40 }
+      ],
+      "outputQuantity": 5
+    }
+  },
+  {
+    "group": "Refined Commodities",
+    "name": "Rocket Fuel",
+    "recipe": {
+      "inputs": [
+        { "resource": "Electrolytes", "quantity": 40 },
+        { "resource": "Plasmoids", "quantity": 40 }
+      ],
+      "outputQuantity": 5
+    }
+  },
+  {
+    "group": "Refined Commodities",
+    "name": "Silicate Glass",
+    "recipe": {
+      "inputs": [
+        { "resource": "Silicon", "quantity": 40 },
+        { "resource": "Oxidizing Compound", "quantity": 40 }
+      ],
+      "outputQuantity": 5
+    }
+  },
+  {
+    "group": "Refined Commodities",
+    "name": "Superconductors",
+    "recipe": {
+      "inputs": [
+        { "resource": "Water", "quantity": 40 },
+        { "resource": "Plasmoids", "quantity": 40 }
+      ],
+      "outputQuantity": 5
+    }
+  },
+  {
+    "group": "Refined Commodities",
+    "name": "Supertensile Plastics",
+    "recipe": {
+      "inputs": [
+        { "resource": "Biomass", "quantity": 40 },
+        { "resource": "Oxygen", "quantity": 40 }
+      ],
+      "outputQuantity": 5
+    }
+  },
+  {
+    "group": "Refined Commodities",
+    "name": "Synthetic Oil",
+    "recipe": {
+      "inputs": [
+        { "resource": "Oxygen", "quantity": 40 },
+        { "resource": "Electrolytes", "quantity": 40 }
+      ],
+      "outputQuantity": 5
+    }
+  },
+  {
+    "group": "Refined Commodities",
+    "name": "Test Cultures",
+    "recipe": {
+      "inputs": [
+        { "resource": "Water", "quantity": 40 },
+        { "resource": "Bacteria", "quantity": 40 }
+      ],
+      "outputQuantity": 5
+    }
+  },
+  {
+    "group": "Refined Commodities",
+    "name": "Transmitter",
+    "recipe": {
+      "inputs": [
+        { "resource": "Chiral Structures", "quantity": 40 },
+        { "resource": "Plasmoids", "quantity": 40 }
+      ],
+      "outputQuantity": 5
+    }
+  },
+  {
+    "group": "Refined Commodities",
+    "name": "Viral Agent",
+    "recipe": {
+      "inputs": [
+        { "resource": "Biomass", "quantity": 40 },
+        { "resource": "Bacteria", "quantity": 40 }
+      ],
+      "outputQuantity": 5
+    }
+  },
+  {
+    "group": "Refined Commodities",
+    "name": "Water-Cooled CPU",
+    "recipe": {
+      "inputs": [
+        { "resource": "Water", "quantity": 40 },
+        { "resource": "Reactive Metals", "quantity": 40 }
+      ],
+      "outputQuantity": 5
+    }
+  }
+]

@@ -1,0 +1,39 @@
+{
+  "engineering": {
+    "text": "工程学"
+  },
+  "missiles": {
+    "text": "导弹"
+  },
+  "intelligence": {
+    "text": "智力"
+  },
+  "memory": {
+    "text": "记忆"
+  },
+  "perception": {
+    "text": "感知"
+  },
+  "willpower": {
+    "text": "毅力"
+  },
+  "P2 Forecast": "P2预测",
+  "Input": "输入",
+  "Result": "结果",
+  "Unkown": "未知",
+  "Planet type": "行星类型",
+  "Resource": "资源",
+  "Density %": "资源密度 %",
+  "Add Resource": "添加资源",
+  "Add Planet": "添加行星",
+  "Load": "加载",
+  "Save": "保存",
+  "P1": "P1",
+  "P2": "P2",
+  "Please select R0": "请选择R0",
+  "Please select planet type": "请选择行星类型",
+  "Please input percent": "请输入百分比",
+  "Planet index": "行星序号",
+  "P1a": "P1a",
+  "P1b": "P1b"
+}

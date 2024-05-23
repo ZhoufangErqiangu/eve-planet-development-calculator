@@ -1,0 +1,30 @@
+{
+  "character": {
+    "text": "Character"
+  },
+  "skills": {
+    "text": "Skills"
+  },
+  "engineering": {
+    "text": "Engineering"
+  },
+  "missiles": {
+    "text": "Missiles"
+  },
+  "intelligence": {
+    "text": "Intelligence"
+  },
+  "memory": {
+    "text": "Memory"
+  },
+  "perception": {
+    "text": "Perception"
+  },
+  "willpower": {
+    "text": "Willpower"
+  },
+  "P2 Forecast": "P2 Forecast",
+  "Input": "Input",
+  "Result": "Result",
+  "Unkown": "Unkown"
+}

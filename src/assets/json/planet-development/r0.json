@@ -1,0 +1,77 @@
+[
+  {
+    "group": "Raw Materials",
+    "name": "Microorganisms",
+    "from": ["Barren", "Ice", "Oceanic", "Temperate"]
+  },
+  {
+    "group": "Raw Materials",
+    "name": "Carbon Compounds",
+    "from": ["Barren", "Oceanic", "Temperate"]
+  },
+  {
+    "group": "Raw Materials",
+    "name": "Planktic Colonies",
+    "from": ["Ice", "Oceanic"]
+  },
+  {
+    "group": "Raw Materials",
+    "name": "Non-CS Crystals",
+    "from": ["Lava", "Plasma"]
+  },
+  {
+    "group": "Raw Materials",
+    "name": "Ionic Solutions",
+    "from": ["Gas", "Storm"]
+  },
+  {
+    "group": "Raw Materials",
+    "name": "Autotrophs",
+    "from": ["Temperate"]
+  },
+  {
+    "group": "Raw Materials",
+    "name": "Reactive Gas",
+    "from": ["Gas"]
+  },
+  {
+    "group": "Raw Materials",
+    "name": "Noble Gas",
+    "from": ["Gas", "Ice", "Storm"]
+  },
+  {
+    "group": "Raw Materials",
+    "name": "Suspended Plasma",
+    "from": ["Lava", "Plasma", "Storm"]
+  },
+  {
+    "group": "Raw Materials",
+    "name": "Noble Metals",
+    "from": ["Barren", "Plasma"]
+  },
+  {
+    "group": "Raw Materials",
+    "name": "Complex Organisms",
+    "from": ["Temperate"]
+  },
+  {
+    "group": "Raw Materials",
+    "name": "Base Metals",
+    "from": ["Barren", "Gas", "Lava", "Plasma", "Storm"]
+  },
+  {
+    "group": "Raw Materials",
+    "name": "Felsic Magma",
+    "from": ["Lava"]
+  },
+  {
+    "group": "Raw Materials",
+    "name": "Heavy Metals",
+    "from": ["Ice", "Lava", "Plasma"]
+  },
+  {
+    "group": "Raw Materials",
+    "name": "Aqueous Liquids",
+    "from": ["Barren", "Gas", "Ice", "Oceanic", "Storm", "Temperate"]
+  }
+]

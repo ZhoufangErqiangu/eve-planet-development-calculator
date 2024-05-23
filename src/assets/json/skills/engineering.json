@@ -1,0 +1,16 @@
+[
+  {
+    "title": "Advanced Weapon Upgrades",
+    "desc": "Reduces the powergrid needs of weapon turrets and launchers by 2% per skill level.",
+    "attributes": ["perception", "willpower"],
+    "multiplier": 6,
+    "value": 0.02
+  },
+  {
+    "title": "Weapon Upgrades",
+    "desc": "Knowledge of gunnery computer systems, including the use of weapon upgrade modules. 5% reduction per skill level in the CPU needs of weapon turrets, launchers and smartbombs.",
+    "attributes": ["perception", "memory"],
+    "multiplier": 2,
+    "value": 0.05
+  }
+]
