@@ -30,7 +30,7 @@
               </el-row>
             </el-form>
             <el-button :icon="Plus" :disabled="pf.r0s.length >= 5" @click="() => addR0(pf)">
-              {{ $t("Add Resource") }}
+              {{ $t("Add resource") }}
             </el-button>
           </el-col>
           <el-col :span="2">
@@ -40,7 +40,7 @@
         <el-divider />
       </el-form>
       <el-button :icon="Plus" :disabled="planetForms.length >= 6" @click="addPlant">
-        {{ $t("Add Planet") }}
+        {{ $t("Add planet") }}
       </el-button>
       <el-button type="warning" :icon="DocumentAdd" @click="load">
         {{ $t('Load') }}

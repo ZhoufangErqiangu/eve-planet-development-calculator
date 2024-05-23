@@ -26,5 +26,20 @@
   "P2 Forecast": "P2 Forecast",
   "Input": "Input",
   "Result": "Result",
-  "Unkown": "Unkown"
+  "Unkown": "Unkown",
+  "Planet type": "Planet type",
+  "Resource": "Resource",
+  "Density %": "Density %",
+  "Add resource": "Add resource",
+  "Add planet": "Add planet",
+  "Load": "Load",
+  "Save": "Save",
+  "P1": "P1",
+  "P2": "P2",
+  "Please select R0": "Please select R0",
+  "Please select planet type": "Please select planet type",
+  "Please input percent": "Please input percent",
+  "Planet index": "Planet index",
+  "P1a": "P1a",
+  "P1b": "P1b"
 }
