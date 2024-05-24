@@ -4,17 +4,14 @@ import { defineConfig, type ConfigEnv } from "vite";
 
 // https://vitejs.dev/config/
 export default defineConfig((_: ConfigEnv) => ({
-  plugins: [
-    vue(),
-    version(),
-  ],
+  plugins: [vue(), version()],
   clearScreen: false,
   build: {
     rollupOptions: {
       output: {
         sourcemap: true,
         manualChunks: {
-          base: ["axios", "dayjs", "ethers"],
+          base: ["axios", "dayjs"],
           vue: ["vue", "vue-router", "pinia"],
           element: ["element-plus", "@element-plus/icons-vue"],
           echarts: ["echarts"],
