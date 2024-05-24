@@ -1,6 +1,6 @@
 <template>
   <el-select v-model="localValue" :disabled="disabled" :placeholder="$t('Please select R0')">
-    <el-option v-for="item in filteredR0" :key="item.name" :label="item.name" :value="item.name" />
+    <el-option v-for="item in filteredR0" :key="item.name" :label="$t(item.name)" :value="item.name" />
   </el-select>
 </template>
 

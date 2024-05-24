@@ -1,28 +1,12 @@
 {
-  "character": {
-    "text": "Character"
-  },
-  "skills": {
-    "text": "Skills"
-  },
-  "engineering": {
-    "text": "Engineering"
-  },
-  "missiles": {
-    "text": "Missiles"
-  },
-  "intelligence": {
-    "text": "Intelligence"
-  },
-  "memory": {
-    "text": "Memory"
-  },
-  "perception": {
-    "text": "Perception"
-  },
-  "willpower": {
-    "text": "Willpower"
-  },
+  "Character": "Character",
+  "skills": "Skills",
+  "Engineering": "Engineering",
+  "Missiles": "Missiles",
+  "Intelligence": "Intelligence",
+  "Memory": "Memory",
+  "Perception": "Perception",
+  "Willpower": "Willpower",
   "P2 Forecast": "P2 Forecast",
   "Input": "Input",
   "Result": "Result",
@@ -41,5 +25,72 @@
   "Please input percent": "Please input percent",
   "Planet index": "Planet index",
   "P1a": "P1a",
-  "P1b": "P1b"
+  "P1b": "P1b",
+  "Barren": "Barren",
+  "Gas": "Gas",
+  "Ice": "Ice",
+  "Lava": "Lava",
+  "Oceanic": "Oceanic",
+  "Plasma": "Plasma",
+  "Storm": "Storm",
+  "Temperate": "Temperate",
+  "Raw Materials": "Raw Materials",
+  "Processed Materials": "Processed Materials",
+  "Refined Commodities": "Refined Commodities",
+  "Specialized Commodities": "Specialized Commodities",
+  "Advanced Commodities": "Advanced Commodities",
+  "Microorganisms": "Microorganisms",
+  "Carbon Compounds": "Carbon Compounds",
+  "Planktic Colonies": "Planktic Colonies",
+  "Non-CS Crystals": "Non-CS Crystals",
+  "Ionic Solutions": "Ionic Solutions",
+  "Autotrophs": "Autotrophs",
+  "Reactive Gas": "Reactive Gas",
+  "Noble Gas": "Noble Gas",
+  "Suspended Plasma": "Suspended Plasma",
+  "Noble Metals": "Noble Metals",
+  "Complex Organisms": "Complex Organisms",
+  "Base Metals": "Base Metals",
+  "Felsic Magma": "Felsic Magma",
+  "Heavy Metals": "Heavy Metals",
+  "Aqueous Liquids": "Aqueous Liquids",
+  "Bacteria": "Bacteria",
+  "Biofuels": "Biofuels",
+  "Biomass": "Biomass",
+  "Chiral Structures": "Chiral Structures",
+  "Electrolytes": "Electrolytes",
+  "Industrial Fibers": "Industrial Fibers",
+  "Oxidizing Compound": "Oxidizing Compound",
+  "Oxygen": "Oxygen",
+  "Plasmoids": "Plasmoids",
+  "Precious Metals": "Precious Metals",
+  "Proteins": "Proteins",
+  "Reactive Metals": "Reactive Metals",
+  "Silicon": "Silicon",
+  "Toxic Metals": "Toxic Metals",
+  "Water": "Water",
+  "Biocells": "Biocells",
+  "Construction Blocks": "Construction Blocks",
+  "Consumer Electronics": "Consumer Electronics",
+  "Coolant": "Coolant",
+  "Enriched Uranium": "Enriched Uranium",
+  "Fertilizer": "Fertilizer",
+  "Genetically Enhanced Livestock": "Genetically Enhanced Livestock",
+  "Livestock": "Livestock",
+  "Mechanical Parts": "Mechanical Parts",
+  "Microfiber Shielding": "Microfiber Shielding",
+  "Miniature Electronics": "Miniature Electronics",
+  "Nanites": "Nanites",
+  "Oxides": "Oxides",
+  "Polyaramids": "Polyaramids",
+  "Polytextiles": "Polytextiles",
+  "Rocket Fuel": "Rocket Fuel",
+  "Silicate Glass": "Silicate Glass",
+  "Superconductors": "Superconductors",
+  "Supertensile Plastics": "Supertensile Plastics",
+  "Synthetic Oil": "Synthetic Oil",
+  "Test Cultures": "Test Cultures",
+  "Transmitter": "Transmitter",
+  "Viral Agent": "Viral Agent",
+  "Water-Cooled CPU": "Water-Cooled CPU"
 }

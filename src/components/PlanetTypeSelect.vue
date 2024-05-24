@@ -1,6 +1,6 @@
 <template>
   <el-select v-model="localValue" :disabled="disabled" :placeholder="$t('Please select planet type')">
-    <el-option v-for="item in PlantTypeJson" :key="item" :label="item" :value="item" />
+    <el-option v-for="item in PlantTypeJson" :key="item" :label="$t(item)" :value="item" />
   </el-select>
 </template>
 
