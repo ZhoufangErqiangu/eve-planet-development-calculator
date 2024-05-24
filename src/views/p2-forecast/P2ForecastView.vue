@@ -20,51 +20,68 @@
       </el-button>
     </el-tab-pane>
     <el-tab-pane :label="$t('Result')" name="res">
-      <h2>{{ $t('P1') }}</h2>
-      <div v-for="p1 in p1Result" :key="p1.id">
-        <el-row :gutter="10">
-          <el-col :span="4">
-            {{ $t('Planet type') }}: {{ $t(p1.planetType ?? "Unkown") }}
-          </el-col>
-          <el-col :span="4">
-            {{ $t('Planet index') }}: {{ p1.planetIndex }}
-          </el-col>
-          <el-col :span="4">
-            {{ $t('P1') }}: {{ $t(p1.p1) }}
-          </el-col>
-        </el-row>
-        <el-divider />
-      </div>
-      <h2>P2</h2>
-      <div v-for="p2 in p2Result" :key="p2.id">
-        <el-row :gutter="10">
-          <el-col :span="4">
-            {{ $t('P1a') }}: {{ $t(p2.p1s[0].p1) }}
-          </el-col>
-          <el-col :span="4">
-            {{ $t('P1b') }}: {{ $t(p2.p1s[1].p1) }}
-          </el-col>
-          <el-col :span="4">
-            {{ $t('P2') }}: {{ $t(p2.p2) }}
-          </el-col>
-          <!-- <el-col :span="4">
-            Value: {{ p2.value * 3000 * 3000 }}
-          </el-col> -->
-        </el-row>
-        <el-divider />
-      </div>
+      <el-card v-if="p2Result.length" :header="$t('P2')">
+        <el-table :data="p2Result">
+          <el-table-column :label="$t('P1a')">
+            <template #default="{ row }">
+              {{ $t(row.p1s[0].p1) }}
+            </template>
+          </el-table-column>
+          <el-table-column :label="$t('P1b')">
+            <template #default="{ row }">
+              {{ $t(row.p1s[1].p1) }}
+            </template>
+          </el-table-column>
+          <el-table-column :label="$t('P2')">
+            <template #default="{ row }">
+              {{ $t(row.p2) }}
+            </template>
+          </el-table-column>
+          <el-table-column :label="$t('Density')">
+            <template #default="{ row }">
+              {{ (row.value * 100.0).toFixed(2) }} %
+            </template>
+          </el-table-column>
+        </el-table>
+      </el-card>
+      <el-divider />
+      <el-card v-if="p1Result.length" :header="$t('P1')">
+        <el-table :data="p1Result">
+          <el-table-column :label="$t('Planet index')">
+            <template #default="{ row }">
+              {{ row.planetIndex }}
+            </template>
+          </el-table-column>
+          <el-table-column :label="$t('Planet type')">
+            <template #default="{ row }">
+              {{ $t(row.planetType ?? "Unkown") }}
+            </template>
+          </el-table-column>
+          <el-table-column :label="$t('P1')">
+            <template #default="{ row }">
+              {{ $t(row.p1) }}
+            </template>
+          </el-table-column>
+          <el-table-column :label="$t('Density')">
+            <template #default="{ row }">
+              {{ (row.value * 100.0).toFixed(2) }} %
+            </template>
+          </el-table-column>
+        </el-table>
+      </el-card>
     </el-tab-pane>
   </el-tabs>
 </template>
 
 <script lang="ts" setup>
-import { DocumentAdd, DocumentCopy, Plus, DocumentDelete } from "@element-plus/icons-vue";
-import { ElButton, ElCol, ElDivider, ElRow, ElTabPane, ElTabs } from "element-plus";
+import { DocumentAdd, DocumentCopy, DocumentDelete, Plus } from "@element-plus/icons-vue";
+import { ElButton, ElCard, ElDivider, ElTabPane, ElTable, ElTableColumn, ElTabs } from "element-plus";
 import "element-plus/es/components/button/style/css";
-import "element-plus/es/components/col/style/css";
+import "element-plus/es/components/card/style/css";
 import "element-plus/es/components/divider/style/css";
-import "element-plus/es/components/row/style/css";
 import "element-plus/es/components/tab-pane/style/css";
+import "element-plus/es/components/table-column/style/css";
+import "element-plus/es/components/table/style/css";
 import "element-plus/es/components/tabs/style/css";
 import { computed, onMounted, ref, watch } from "vue";
 import { uuid } from "../../utils/uuid";

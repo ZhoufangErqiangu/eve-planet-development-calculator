@@ -15,7 +15,7 @@
               </el-form-item>
             </el-col>
             <el-col :span="6">
-              <el-form-item :label="$t('Density %')" prop="r0">
+              <el-form-item :label="$t('Density') + ' %'" prop="r0">
                 <PercentInput :model-value="rf.value" @update:model-value="(val) => updateR0Value(index, val)" />
               </el-form-item>
             </el-col>

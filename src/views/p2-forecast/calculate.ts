@@ -86,7 +86,7 @@ export function calculateP2(plants: PlanetP1Result[]): PlanetP2[] {
         id: uuid(),
         p2: p2.name,
         p1s: [p1a, p1b],
-        value: p1a.value * p1b.value,
+        value: Math.min(p1a.value, p1b.value),
       });
     }
   }
