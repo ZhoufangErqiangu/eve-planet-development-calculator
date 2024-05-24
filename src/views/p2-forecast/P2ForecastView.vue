@@ -4,41 +4,8 @@
   </h1>
   <el-tabs v-model="activeTab">
     <el-tab-pane :label="$t('Input')" name="form">
-      <el-form v-for="pf in planetForms" :key="pf.id" :model="pf">
-        <el-row :gutter="10">
-          <el-col :span="6">
-            <el-form-item :label="$t('Planet type')" prop="planetType">
-              <planetTypeSelect v-model="pf.planetType" />
-            </el-form-item>
-          </el-col>
-          <el-col :span="16">
-            <el-form v-for="rf in pf.r0s" :key="rf.id" :model="rf">
-              <el-row :gutter="10">
-                <el-col :span="10">
-                  <el-form-item :label="$t('Resource')" prop="r0">
-                    <R0Select v-model="rf.r0" :plant-type="pf.planetType" />
-                  </el-form-item>
-                </el-col>
-                <el-col :span="12">
-                  <el-form-item :label="$t('Density %')" prop="r0">
-                    <PercentInput v-model="rf.value" />
-                  </el-form-item>
-                </el-col>
-                <el-col :span="2">
-                  <el-button type="danger" :icon="Close" @click="() => removeR0(pf, rf)" />
-                </el-col>
-              </el-row>
-            </el-form>
-            <el-button :icon="Plus" :disabled="pf.r0s.length >= 5" @click="() => addR0(pf)">
-              {{ $t("Add resource") }}
-            </el-button>
-          </el-col>
-          <el-col :span="2">
-            <el-button type="danger" :icon="Close" @click="() => removePlant(pf)" />
-          </el-col>
-        </el-row>
-        <el-divider />
-      </el-form>
+      <PlanetInput v-for="pf, index in planetForms" :key="pf.id" :model-value="pf"
+        @update:model-value="(val) => updatePlanetForm(index, val)" @close="removePlant" />
       <el-button :icon="Plus" :disabled="planetForms.length >= 6" @click="addPlant">
         {{ $t("Add planet") }}
       </el-button>
@@ -47,6 +14,9 @@
       </el-button>
       <el-button type="primary" :icon="DocumentCopy" @click="save">
         {{ $t('Save') }}
+      </el-button>
+      <el-button type="danger" :icon="DocumentDelete" @click="clear">
+        {{ $t('Clear') }}
       </el-button>
     </el-tab-pane>
     <el-tab-pane :label="$t('Result')" name="res">
@@ -88,61 +58,39 @@
 </template>
 
 <script lang="ts" setup>
-import { Close, DocumentAdd, DocumentCopy, Plus } from "@element-plus/icons-vue";
-import { ElButton, ElCol, ElDivider, ElForm, ElFormItem, ElRow, ElTabPane, ElTabs } from "element-plus";
+import { DocumentAdd, DocumentCopy, Plus, DocumentDelete } from "@element-plus/icons-vue";
+import { ElButton, ElCol, ElDivider, ElRow, ElTabPane, ElTabs } from "element-plus";
 import "element-plus/es/components/button/style/css";
 import "element-plus/es/components/col/style/css";
 import "element-plus/es/components/divider/style/css";
-import "element-plus/es/components/form-item/style/css";
-import "element-plus/es/components/form/style/css";
 import "element-plus/es/components/row/style/css";
 import "element-plus/es/components/tab-pane/style/css";
 import "element-plus/es/components/tabs/style/css";
 import { computed, onMounted, ref, watch } from "vue";
-import PercentInput from "../../components/PercentInput.vue";
-import planetTypeSelect from "../../components/PlanetTypeSelect.vue";
-import R0Select from "../../components/R0Select.vue";
 import { uuid } from "../../utils/uuid";
+import PlanetInput from "./PlanetInput.vue";
 import { calculateP1, calculateP2, type PlanetP1Result, type PlanetP2 } from "./calculate";
+import { type PlanetForm } from "./types";
 
 const activeTab = ref("form");
 
-interface PlanetR0Form {
-  id: string;
-  r0?: string;
-  value?: number;
-}
-interface PlanetForm {
-  id: string;
-  planetType?: string;
-  r0s: PlanetR0Form[];
-}
 const planetForms = ref<PlanetForm[]>([]);
 addPlant();
-addR0(planetForms.value[0]);
+
+function updatePlanetForm(index: number, val: PlanetForm) {
+  planetForms.value[index] = val;
+}
 
 function addPlant() {
   planetForms.value.push({
     id: uuid(),
     r0s: [],
   });
-  addR0(planetForms.value[planetForms.value.length - 1]);
 }
-function removePlant(pf: PlanetForm) {
-  const i = planetForms.value.indexOf(pf);
+function removePlant(id: string) {
+  const i = planetForms.value.findIndex(pf => pf.id === id);
   if (i >= 0) {
     planetForms.value.splice(i, 1);
-  }
-}
-function addR0(pf: PlanetForm) {
-  pf.r0s.push({
-    id: uuid(),
-  });
-}
-function removeR0(pf: PlanetForm, rf: PlanetR0Form) {
-  const i = pf.r0s.indexOf(rf);
-  if (i >= 0) {
-    pf.r0s.splice(i, 1);
   }
 }
 
@@ -154,6 +102,10 @@ function load() {
 }
 function save() {
   localStorage.setItem("planetForms", JSON.stringify(planetForms.value));
+}
+function clear() {
+  planetForms.value = [];
+  addPlant();
 }
 
 const plantP1Result = ref<PlanetP1Result[]>([]);
