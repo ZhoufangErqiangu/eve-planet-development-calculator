@@ -1,5 +1,6 @@
 <template>
-  <el-input-number v-model="localValue" :disabled="disabled" :placeholder="$t('Please input percent')" />
+  <el-input-number v-model="localValue" :disabled="disabled" :placeholder="$t('Please input percent')"
+    :precision="precision" />
 </template>
 
 <script lang="ts" setup>
@@ -16,6 +17,10 @@ const props = defineProps({
     type: Boolean,
     default: false,
   },
+  precision: {
+    type: Number,
+    default: 2
+  }
 });
 const emits = defineEmits(["update:modelValue"]);
 
