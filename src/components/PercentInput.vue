@@ -1,5 +1,5 @@
 <template>
-  <el-input-number v-model="localValue" :disabled="disabled" :placeholder="$t('Please input percent')" :precision="2" />
+  <el-input-number v-model="localValue" :disabled="disabled" :placeholder="$t('Please input percent')" />
 </template>
 
 <script lang="ts" setup>

@@ -6,7 +6,7 @@
     <el-tab-pane :label="$t('Input')" name="form">
       <PlanetInput v-for="pf, index in planetForms" :key="pf.id" :model-value="pf"
         @update:model-value="(val) => updatePlanetForm(index, val)" @close="removePlant" />
-      <el-button :icon="Plus" :disabled="planetForms.length >= 6" @click="addPlant">
+      <el-button :icon="Plus" @click="addPlant">
         {{ $t("Add planet") }}
       </el-button>
       <el-button type="warning" :icon="DocumentAdd" @click="load">
