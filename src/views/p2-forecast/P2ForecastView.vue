@@ -24,12 +24,12 @@
         <el-table :data="p2Result">
           <el-table-column :label="$t('P1a')">
             <template #default="{ row }">
-              {{ $t(row.p1s[0].p1) }}
+              {{ $t(row.p1s[0].p1) }} {{ row.p1s[0].planetIndex }}
             </template>
           </el-table-column>
           <el-table-column :label="$t('P1b')">
             <template #default="{ row }">
-              {{ $t(row.p1s[1].p1) }}
+              {{ $t(row.p1s[1].p1) }} {{ row.p1s[1].planetIndex }}
             </template>
           </el-table-column>
           <el-table-column :label="$t('P2')">
@@ -92,7 +92,6 @@ import { type PlanetForm } from "./types";
 const activeTab = ref("form");
 
 const planetForms = ref<PlanetForm[]>([]);
-addPlant();
 
 function updatePlanetForm(index: number, val: PlanetForm) {
   planetForms.value[index] = val;
@@ -115,6 +114,8 @@ function load() {
   const data = localStorage.getItem("planetForms");
   if (data) {
     planetForms.value = JSON.parse(data);
+  } else {
+    addPlant();
   }
 }
 function save() {
@@ -140,7 +141,7 @@ const p1Result = computed(() => {
       });
     });
   }
-  p1r.sort((a, b) => a.value - b.value);
+  p1r.sort((a, b) => b.value - a.value);
   return p1r;
 });
 
@@ -150,7 +151,7 @@ watch(activeTab, (val) => {
   if (val === "res") {
     // do calculate
     plantP1Result.value = calculateP1(planetForms.value);
-    p2Result.value = calculateP2(plantP1Result.value).sort((a, b) => a.value - b.value);
+    p2Result.value = calculateP2(plantP1Result.value).sort((a, b) => b.value - a.value);
   };
 });
 

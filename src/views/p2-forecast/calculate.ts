@@ -16,6 +16,7 @@ export interface Planet {
 export interface PlanetP1 {
   id: string;
   p1: string;
+  planetIndex: number;
   value: number;
 }
 
@@ -33,7 +34,8 @@ export interface PlanetP1Result extends Planet {
 export function calculateP1(planets: Planet[]): PlanetP1Result[] {
   const plantsWithP1s = planets.map((planet) => {
     const p1s: PlanetP1[] = [];
-    for (const r of planet.r0s) {
+    for (let i = 0; i < planet.r0s.length; i++) {
+      const r = planet.r0s[i];
       if (!r.r0) continue;
       const p1 = P1Json.find((p) =>
         p.recipe.inputs.find((i) => i.resource === r.r0),
@@ -42,6 +44,7 @@ export function calculateP1(planets: Planet[]): PlanetP1Result[] {
       p1s.push({
         id: uuid(),
         p1: p1.name,
+        planetIndex: i + 1,
         value: r.value ?? 0,
       });
     }
@@ -80,13 +83,14 @@ export function calculateP2(plants: PlanetP1Result[]): PlanetP2[] {
         );
       });
       if (!p2) continue;
-      const e = p2s.find((e) => e.p2 === p2.name);
-      if (e) continue;
+      const value = Math.min(p1a.value, p1b.value);
+      // const e = p2s.find((e) => e.p2 === p2.name);
+      // if (e && e.value >= value) continue;
       p2s.push({
         id: uuid(),
         p2: p2.name,
         p1s: [p1a, p1b],
-        value: Math.min(p1a.value, p1b.value),
+        value,
       });
     }
   }
