@@ -52,7 +52,7 @@
   {
     "group": "Raw Materials",
     "name": "Complex Organisms",
-    "from": ["Temperate"]
+    "from": ["Oceanic", "Temperate"]
   },
   {
     "group": "Raw Materials",
