@@ -1,6 +1,6 @@
 import {
   createRouter,
-  createWebHashHistory,
+  createWebHistory,
   type RouteLocationNormalized,
   type RouteRecordRaw,
 } from "vue-router";
@@ -37,7 +37,7 @@ const routes: RouteRaw[] = [
 const base = "/";
 const title = import.meta.env.VITE_APP_TITLE ?? "";
 export const router = createRouter({
-  history: createWebHashHistory(base),
+  history: createWebHistory(base),
   routes,
 });
 
